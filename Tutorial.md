@@ -39,7 +39,7 @@ ls
 pwd
 mv Hello.txt Goodbye.txt
 ls
-copy Goodbye.txt Hello.txt
+cp Goodbye.txt Hello.txt
 ls
 rm Goodbye.txt
 ls

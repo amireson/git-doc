@@ -200,4 +200,20 @@ git status
 
 Now you have a fresh copy of the repository. You can delete it anytime - this will not affect the server. You can add new commits to your local copy, and generally use all the commands in Lesson 4. Now a few different things could happen, and we're into advanced git usage. This will be dealt with with a later lesson. For now, this is enough information for you to work effectively with git.
 
-</article>
+## Reference: working with a remote repository
+
+When you are working with a remote repository you will need the following commands:
+
+`git clone` Make a new copy of the remote repo in the current folder. See Lesson 5.
+
+`git remote -v` Print information about the remote repository
+
+`git fetch origin` Brings information about the current version of the repository to the local computer. Then you can type
+
+`git diff origin/master origin` Which lists differences.
+
+`git merge origin/master origin` Brings changes on the server version to your local version. Only run this after you have run the `fetch` command above.
+
+`git push origin master` Sends your changes in your local repository to the version on the server. 
+
+In all cases, if there are clashes (e.g. if two people have edited the same file) you will be notified and the action will not be completed.

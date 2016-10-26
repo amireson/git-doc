@@ -210,7 +210,7 @@ When you are working with a remote repository you will need the following comman
 
 `git fetch origin` Brings information about the current version of the repository to the local computer. Then you can type
 
-`git diff origin/master master` Which lists differences.
+`git diff --name-status origin/master master` Which lists the files that have changes. Prefixes mean: A - added, M - modified, D - deleted. If you want to see the actual differences within each file omit `--name-status`.
 
 `git merge origin/master master` Brings changes on the server version to your local version. Only run this after you have run the `fetch` command above.
 

@@ -217,3 +217,13 @@ When you are working with a remote repository you will need the following comman
 `git push origin master` Sends your changes in your local repository to the version on the server. 
 
 In all cases, if there are clashes (e.g. if two people have edited the same file) you will be notified and the action will not be completed.
+
+### Note on branches
+
+It might help with the above to understand a little bit about branches and the names "origin" and "master". When you work with git you are always in a particular named branch. By default this is "master" and I have not found any need to change this - though you can. You can also switch between your local branches with `checkout`, though again I haven't done this. To see your branches you can type 
+
+```
+git log --oneline --decorate
+```
+
+The remote repository was created empty and was connected to a local repository with the command `git add remote origin ADDRESS`. Here origin defined the name of the remote repository. You can use something other than origin, but don't. Now, when you push your local repo to the remote, with `git push origin master` you create a branch on the remote called `origin/master`. You can always use fetch then diff to figure out differences between the local and remote repository.

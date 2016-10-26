@@ -210,9 +210,9 @@ When you are working with a remote repository you will need the following comman
 
 `git fetch origin` Brings information about the current version of the repository to the local computer. Then you can type
 
-`git diff origin/master origin` Which lists differences.
+`git diff origin/master master` Which lists differences.
 
-`git merge origin/master origin` Brings changes on the server version to your local version. Only run this after you have run the `fetch` command above.
+`git merge origin/master master` Brings changes on the server version to your local version. Only run this after you have run the `fetch` command above.
 
 `git push origin master` Sends your changes in your local repository to the version on the server. 
 
